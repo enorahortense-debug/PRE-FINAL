@@ -1,0 +1,118 @@
+/* ===== PAGE BACKGROUND ===== */
+body {
+    background-color: #800020; /* Bordeaux */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.book-container {
+    max-width: 900px;
+    margin: 40px auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* ===== BOOK IMAGE ===== */
+.book-image img {
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+/* ===== BOOK DETAILS ===== */
+.book-details {
+    flex: 1;
+}
+
+/* TITLE */
+.book-details h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+/* RESUME */
+.book-resume {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* LABELS */
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/* LANGUAGE */
+#language {
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* PRICE */
+.book-price {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+/* QUANTITY */
+#quantity {
+    width: 60px;
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}
+
+/* MESSAGES */
+#error-msg {
+    color: #ffcccc;
+    margin-top: 10px;
+}
+
+#added-msg {
+    color: #ccffcc;
+    margin-top: 10px;
+}
+
+/* ===== BUTTONS ===== */
+.book-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.book-buttons button,
+.book-buttons .book-btn {
+    background-color: white;
+    color: #800020;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.book-buttons button:hover,
+.book-buttons .book-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .book-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

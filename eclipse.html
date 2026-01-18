@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eclipse - Book Details</title>
+    <link rel="stylesheet" href="moon.css">
+</head>
+<body>
+
+    <main class="book-container">
+
+        <!-- BOOK IMAGE -->
+        <div class="book-image">
+            <img src="eclipse.jpg" alt="Eclipse Book">
+        </div>
+
+        <!-- BOOK DETAILS -->
+        <div class="book-details">
+            <h1>Eclipse</h1>
+
+            <p class="book-resume">
+                In Eclipse, Bella Swan is forced to confront the growing danger surrounding her as a series of mysterious
+                killings plague Seattle. Caught between her love for Edward Cullen and her deep friendship with Jacob
+                Black, Bella must make difficult choices. As vampires and werewolves form an uneasy alliance, old enemies
+                return, testing loyalty, courage, and the true meaning of love.
+            </p>
+
+            <!-- LANGUAGE -->
+            <label for="language">Choose Language:</label>
+            <select id="language">
+                <option value="eng">English</option>
+                <option value="fr">French</option>
+                <option value="esp">Spanish</option>
+            </select>
+
+            <!-- PRICE -->
+             <p>PRICE $:</p>
+            <p class="book-price">24</p>
+
+            <!-- QUANTITY -->
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" value="1" min="1">
+
+            <!-- MESSAGES -->
+            <p id="error-msg" style="display:none;">Please select at least 1 item.</p>
+            <p id="added-msg" style="display:none;">Item added to cart!</p>
+
+            <!-- BUTTONS -->
+            <div class="book-buttons">
+                <button id="add-to-cart">Add to Cart</button>
+                <a href="catalog.html" class="book-btn">← Back to Catalogue</a>
+                <a href="cart.html" class="book-btn">View Cart 🛒</a>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="book.js"></script>
+    <!-- Bottom Navigation Tab -->
+<nav class="bottom-tab">
+    <a href="index.html" class="tab-item">🏠 Home</a>
+    <a href="catalog.html" class="tab-item">📚 Catalog</a>
+    <a href="cart.html" class="tab-item">🛒 Cart</a>
+    <a href="thankyou.html" class="tab-item">✉️ Contact</a>
+</nav>
+
+</body>
+</html>

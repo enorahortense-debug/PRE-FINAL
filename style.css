@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Georgia, serif;
+}
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* HEADER */
+.header {
+    background: #b30000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* MAIN LAYOUT */
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* CONTENT */
+.content {
+    flex: 3;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+/* SIDEBAR */
+.sidebar {
+    flex: 1;
+    background: #ddd;
+    padding: 20px;
+}
+
+/* FOOTER */
+.footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* 📱 MOBILE & TABLET */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .header h1 {
+        font-size: 22px;
+    }
+}
+
+
+/* Hero section */
+.hero {
+    height: 100vh;
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("dc9cda9b3e28f3f3d9fe5ddccf51db2c.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Title */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;   /* THIS stacks them */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Welcome to */
+.hero h1 {
+    font-style: italic;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #f0f0f0;
+}
+
+/* Main title */
+.hero h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 3.2rem;
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+.hero h3 {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    color: #dcdcdc;
+}
+.shop-btn {
+    margin-top: 25px;
+    padding: 14px 40px;
+    background-color: #4b0000;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    box-shadow: 0 0 15px rgba(75, 0, 0, 0.6); /* ✨ glow */
+    transition: background-color 0.3s ease;
+}
+
+.shop-btn:hover {
+    background-color: #700000;
+}
+.info-section {
+    min-height: 100vh;
+    background-color: #0b0b16;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    gap: 40px;
+}
+
+.info-text {
+    flex: 1;
+}
+
+.info-text h1,
+.info-text h2 {
+    color: #cda1a1;
+}
+
+.info-text p,
+.info-text li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.info-text ul {
+    margin-top: 15px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.info-text li::before {
+    content: "• ";
+    color: #dbc4c4;
+}
+
+.info-image {
+    flex: 1;
+    text-align: center;
+}
+
+.info-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+/* Styles for Go Back button */
+.back-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4b2e83;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    /* Position at bottom center */
+    display: block;
+    margin: 40px auto 20px auto; /* top margin 40px, bottom 20px, centered horizontally */
+}
+
+.back-btn:hover {
+    background-color: #3a2266;
+}
+.see-more-btn {
+    display: block;
+    width: 150px;
+    text-align: center;
+    margin: 40px auto 20px auto; /* below Go Back button */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff4b6e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.see-more-btn:hover {
+    background-color: #e03b5a;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+/* Align all 5 books horizontally */
+.catalogue {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: nowrap; /* keeps them in one row */
+}
+
+.book {
+    background-color: white;
+    padding: 15px;
+    width: 170px;
+    box-shadow: 0 4px 8px rgba(215, 208, 219, 0.2);
+    border-radius: 8px;
+    color:white;
+}
+
+.book img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.title {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.year {
+    color: #555555;
+    font-size: 14px;
+}
+.cute-message {
+    margin-top: 20px;
+    font-size: 16px;
+    color: white;
+    font-style: italic;
+}
+
+.button-container {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.back-button {
+    padding: 12px 25px;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.back-button:hover {
+    background-color: #444;
+}
+body {
+    background: linear-gradient(to bottom, #dcd5d5, #b30000);
+}
+.view-cart-btn {
+    margin-top: 10px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    padding: 8px 14px;
+    border-radius: 10px;
+    font-size: 13px;
+    cursor: pointer;
+}
+/* Bottom Tab Navigation */
+.bottom-tab {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ff4e50;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0 -3px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+.bottom-tab .tab-item {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    flex: 1;
+    transition: 0.3s;
+}
+
+.bottom-tab .tab-item:hover {
+    background-color: #ff7b7b;
+    border-radius: 10px;
+    transform: scale(1.05);
+}

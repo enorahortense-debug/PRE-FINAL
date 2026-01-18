@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Moon - Book Details</title>
+    <link rel="stylesheet" href="moon.css">
+</head>
+<body>
+
+    <!-- MAIN BOOK CONTAINER -->
+    <main class="book-container">
+
+        <!-- BOOK IMAGE -->
+        <div class="book-image">
+            <img src="moon.jpg" alt="New Moon Book">
+        </div>
+
+        <!-- BOOK DETAILS -->
+        <div class="book-details">
+            <h1>New Moon</h1>
+
+            <p class="book-resume">
+                In New Moon, Bella Swan faces heartbreak after Edward Cullen leaves Forks to protect her from danger.
+                Struggling with loneliness and loss, Bella forms a closer bond with her friend Jacob Black, who hides
+                secrets of his own. As Bella is drawn into the dangerous world of werewolves and vampires, she learns
+                the meaning of friendship, sacrifice, and resilience. This second installment deepens the emotional
+                journey of the Twilight saga.
+            </p>
+
+            <!-- LANGUAGE SELECTION -->
+            <label for="language">Choose Language:</label>
+            <select id="language">
+                <option value="eng">English</option>
+                <option value="fr">French</option>
+                <option value="esp">Spanish</option>
+            </select>
+
+            <!-- PRICE -->
+             <p>PRICE $: </p>
+            <p class="book-price">27</p>
+
+            <!-- QUANTITY -->
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" value="1" min="1">
+
+            <!-- ERROR MESSAGE -->
+            <p id="error-msg" style="display:none;">Please select at least 1 item.</p>
+
+            <!-- ADDED MESSAGE -->
+            <p id="added-msg" style="display:none;">Item added to cart!</p>
+
+            <!-- BUTTONS -->
+            <div class="book-buttons">
+                <button id="add-to-cart">Add to Cart</button>
+                <a href="catalog.html" class="book-btn">← Back to Catalogue</a>
+                <a href="cart.html" class="book-btn">View Cart 🛒</a>
+            </div>
+        </div>
+
+    </main>
+
+
+     <script src="book.js"></script> 
+<!-- Bottom Navigation Tab -->
+<nav class="bottom-tab">
+    <a href="index.html" class="tab-item">🏠 Home</a>
+    <a href="catalog.html" class="tab-item">📚 Catalog</a>
+    <a href="cart.html" class="tab-item">🛒 Cart</a>
+    <a href="contact.html" class="tab-item">✉️ Contact</a>
+</nav>
+
+</body>
+</html>

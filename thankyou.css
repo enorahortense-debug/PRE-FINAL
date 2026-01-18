@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.thankyou-container {
+    background-color: rgba(0,0,0,0.6);
+    padding: 40px;
+    border-radius: 20px;
+    width: 450px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #ffeb3b;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #fff;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 12px;
+    border: none;
+    background-color: #ffeb3b;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ffc107;
+}
+
+.success {
+    color: #00ff7f;
+    margin-top: 10px;
+}
+
+/* Back to Home button */
+.home-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 20px;
+    background-color: #ff4e50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.home-btn:hover {
+    background-color: #ff7b7b;
+    transform: scale(1.05);
+}

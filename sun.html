@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midnight Sun - Book Details</title>
+    <link rel="stylesheet" href="moon.css">
+</head>
+<body>
+
+    <main class="book-container">
+
+        <!-- BOOK IMAGE -->
+        <div class="book-image">
+            <img src="sun.jpg" alt="Midnight Sun Book">
+        </div>
+
+        <!-- BOOK DETAILS -->
+        <div class="book-details">
+            <h1>Midnight Sun</h1>
+
+            <p class="book-resume">
+                Midnight Sun retells the story of Twilight from Edward Cullen’s perspective, offering a deeper insight
+                into his thoughts, emotions, and inner struggles. As Edward navigates his intense love for Bella Swan,
+                he battles the danger his vampire nature poses to her. This novel reveals hidden moments, heightened
+                tension, and a darker emotional depth to the iconic Twilight love story.
+            </p>
+
+            <!-- LANGUAGE -->
+            <label for="language">Choose Language:</label>
+            <select id="language">
+                <option value="eng">English</option>
+                <option value="fr">French</option>
+                <option value="esp">Spanish</option>
+            </select>
+
+            <!-- PRICE -->
+             <p>PRICE $:</p>
+            <p class="book-price">26</p>
+
+            <!-- QUANTITY -->
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" value="1" min="1">
+
+            <!-- MESSAGES -->
+            <p id="error-msg" style="display:none;">Please select at least 1 item.</p>
+            <p id="added-msg" style="display:none;">Item added to cart!</p>
+
+            <!-- BUTTONS -->
+            <div class="book-buttons">
+                <button id="add-to-cart">Add to Cart</button>
+                <a href="catalog.html" class="book-btn">← Back to Catalogue</a>
+                <a href="cart.html" class="book-btn">View Cart 🛒</a>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="book.js"></script>
+    <!-- Bottom Navigation Tab -->
+<nav class="bottom-tab">
+    <a href="index.html" class="tab-item">🏠 Home</a>
+    <a href="catalog.html" class="tab-item">📚 Catalog</a>
+    <a href="cart.html" class="tab-item">🛒 Cart</a>
+    <a href="contact.html" class="tab-item">✉️ Contact</a>
+</nav>
+
+</body>
+</html>

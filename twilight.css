@@ -1,0 +1,127 @@
+/* ===== PAGE BACKGROUND ===== */
+body {
+    background-color: #800020; /* Bordeaux color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff; /* White text */
+}
+
+/* ===== MAIN CONTAINER ===== */
+.book-container {
+    max-width: 900px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* ===== BOOK IMAGE ===== */
+.book-image img {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    margin-right: 20px; /* space between image and text */
+}
+
+/* ===== BOOK DETAILS ===== */
+.book-details {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* BOOK TITLE */
+.book-details h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* BOOK RESUME */
+.book-resume {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* LANGUAGE SELECTOR */
+#language {
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+/* PRICE */
+.book-price {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+/* QUANTITY INPUT */
+#quantity {
+    width: 60px;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    font-size: 1rem;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+}
+
+/* ERROR AND FEEDBACK MESSAGES */
+#error-msg, #added-msg {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    color: #ffdddd; /* soft red for error */
+}
+
+/* BUTTONS STACKED VERTICALLY */
+.book-buttons {
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    gap: 10px; /* space between buttons */
+    margin-top: 15px;
+}
+
+/* BUTTON STYLE */
+.book-buttons button,
+.book-buttons .book-btn {
+    background-color: #fff; /* white background */
+    color: #800020; /* text in Bordeaux */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.book-buttons button:hover,
+.book-buttons .book-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .book-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .book-image img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .book-details {
+        width: 100%;
+    }
+}

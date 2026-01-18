@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thank You | Twilight Saga Bookstore</title>
+    <link rel="stylesheet" href="thankyou.css">
+</head>
+<body>
+    <div class="thankyou-container">
+        <h1>🎉 Thank You for Your Order!</h1>
+        <p>Your order has been successfully placed. We appreciate your support!</p>
+
+        <h2>Contact Us / Feedback</h2>
+        <form id="feedbackForm">
+            <label>Name</label>
+            <input type="text" id="fbName" placeholder="Your Name" required>
+
+            <label>Email</label>
+            <input type="email" id="fbEmail" placeholder="Your Email" required>
+
+            <label>Message</label>
+            <textarea id="fbMessage" placeholder="Your Feedback" required></textarea>
+
+            <button type="submit">Send Feedback</button>
+            <p id="fbSuccess" class="success"></p>
+        </form>
+
+        <!-- Back to Home / Shop button -->
+        <a href="index.html" class="home-btn">🏠 Back to Home</a>
+    </div>
+
+    <script>
+        const feedbackForm = document.getElementById("feedbackForm");
+        const fbSuccess = document.getElementById("fbSuccess");
+
+        feedbackForm.addEventListener("submit", function(e) {
+            e.preventDefault();
+            fbSuccess.textContent = "✅ Thank you for your feedback!";
+            feedbackForm.reset();
+        });
+    </script>
+    
+
+
+</body>
+</html>
